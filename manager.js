@@ -35,6 +35,6 @@ else if (number == 4) {
     console.log(tasks);
     console.log(file);
 }
-else {rl.close(console.log("Final"))}
+else {console.log("Final")}
 rl.close();
 });
