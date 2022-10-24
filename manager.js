@@ -15,8 +15,9 @@ console.log(file);
 var rl = readline.createInterface( process.stdin, process.stdout);
 rl.question("Make your choice:", (number) => {
  if (number == 1) {
-console.log('Your tasks are: ' + tasks);
-console.log(file);}
+    console.log('Your tasks are: ' + tasks);
+    console.log(file);
+}
 else if (number == 2) { 
     let addTask = prompt("Add a new task:");
     tasks[tasks.length] = addTask;
@@ -24,10 +25,10 @@ else if (number == 2) {
     console.log(file);
 }
 else if (number == 3) {
-let deleteTask = prompt("Delete the task:");
-delete tasks[deleteTask-1];
-console.log(tasks);
-console.log(file);
+    let deleteTask = prompt("Delete the task:");
+    delete tasks[deleteTask-1];
+    console.log(tasks);
+    console.log(file);
 }
 else if (number == 4) {
     let doneTask = prompt("Which task is done?");
@@ -35,6 +36,7 @@ else if (number == 4) {
     console.log(tasks);
     console.log(file);
 }
-else {console.log("Final")}
-rl.close();
-});
+else {
+    console.log("Final")}
+    rl.close();
+})
