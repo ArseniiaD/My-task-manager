@@ -31,7 +31,7 @@ console.log(file);
 }
 else if (number == 4) {
     let doneTask = prompt("Which task is done?");
-    tasks[doneTask-1] = tasks[doneTask] + " done";
+    tasks[doneTask-1] = tasks[doneTask-1] + " done";
     console.log(tasks);
     console.log(file);
 }
